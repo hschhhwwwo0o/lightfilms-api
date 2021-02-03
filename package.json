@@ -4,7 +4,7 @@
   "description": "API for lightfilms",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ssandry/lf-api/issues"
   },
-  "homepage": "https://github.com/ssandry/lf-api#readme"
+  "homepage": "https://github.com/ssandry/lf-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "fs": "0.0.1-security",
+    "graphql": "^15.5.0"
+  }
 }
