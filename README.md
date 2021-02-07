@@ -1,6 +1,16 @@
 <img src = "./md/giphyme.gif" width = "100%" />
 
-<br />
-
 # lf-api
-API for lightfilms 
+API for lightfilms
+
+```graphql
+{
+  getAllPersons {
+    id
+    name
+    countries
+    type
+  }
+}
+```
+
