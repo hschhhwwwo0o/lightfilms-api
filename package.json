@@ -1,7 +1,7 @@
 {
   "name": "lf-api",
-  "version": "1.0.0",
-  "description": "API for lightfilms",
+  "version": "1.1.0",
+  "description": "API for lightfilms 🌂",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/ssandry/lf-api.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "express-graphql",
+    "graphql"
+  ],
+  "author": "@ssandry",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ssandry/lf-api/issues"
