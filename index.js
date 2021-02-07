@@ -12,8 +12,7 @@ const times = require("./data/times.json");
 const SCHEMAGQL = readFileSync(`${__dirname}/schema.gql`, { encoding: "utf8" });
 let schema = buildSchema(SCHEMAGQL);
 
-//PORT
-const PORT = 3008;
+const port = 3008;
 
 let root = {
 
@@ -55,5 +54,4 @@ app.use("/", graphqlHTTP({
     graphiql: true
 }))
 
-app.listen(PORT);
-console.log('DEV_GRAPHQL_SERVER=http://localhost:' + PORT);
+app.listen(process.env.PORT || port);
