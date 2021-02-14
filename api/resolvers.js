@@ -1,7 +1,7 @@
 // DATA
-const films = require("./data/films.json");
-const persons = require("./data/persons.json");
-const times = require("./data/times.json");
+const films = require("../data/films.json");
+const persons = require("../data/persons.json");
+const times = require("../data/times.json");
 
 module.exports = {
 
