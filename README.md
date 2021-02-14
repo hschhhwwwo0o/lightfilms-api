@@ -15,6 +15,8 @@ $cd lf-api
 $npm run start # or yarn start
 ```
 
+# Example of a GraphQL query
+
 ```graphql
 {
   getAllPersons {
