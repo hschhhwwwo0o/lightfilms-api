@@ -18,4 +18,4 @@ app.use("/", graphqlHTTP({
     graphiql: true
 }))
 
-app.listen(process.env.PORT || port, () => { console.log( "GraphQL API has been started on http://localhost:3008/" ) });
+app.listen(process.env.PORT || port);
