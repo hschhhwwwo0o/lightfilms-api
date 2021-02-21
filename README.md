@@ -23,6 +23,7 @@ $npm run start # or yarn start
 # GraphQL type description
 
 **GraphQL type Person**
+**Check all types <a href = "https://github.com/ssandry/lf-api/blob/main/api/schema.gql"><i>here</i></a>**
 
 ```graphql
 type Person {
