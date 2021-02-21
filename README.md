@@ -35,6 +35,25 @@ $npm run start # or yarn start
 }
 ```
 
+# GraphQL type description
+
+**GraphQL type Person**
+
+```graphql
+type Person {
+    id: ID!
+    name: String!
+    title: String!
+    countries: [String]!
+    imgs: [String]!
+    type: String!
+    about: About2!
+    briefAbout: String!
+    filmography: [Card]!
+    yearsPopular: [String]!
+}
+```
+
 # Example of a GraphQL response
 
 ```json
