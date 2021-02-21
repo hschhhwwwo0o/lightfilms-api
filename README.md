@@ -4,18 +4,25 @@
 
 # Setup
 
+**Install && Setup project**
+
 ```sh
 $git clone https://github.com/ssandry/lf-api.git
 $cd lf-api
+$npm install # or yarn 
 ```
 
 # Start
+
+**Console command for start GraphQL server**
 
 ```sh
 $npm run start # or yarn start
 ```
 
-# Example of a GraphQL query
+# GraphQL query
+
+**More GraphQL query examples here**
 
 ```graphql
 {
