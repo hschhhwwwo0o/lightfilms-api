@@ -2,6 +2,8 @@
 
 **Test queries here**
 
+## Get certain fields of all persons
+
 ```graphql
 {
   getAllPersons {
@@ -13,6 +15,8 @@
 }
 ```
 
+## Get certain fields of all films
+
 ```graphql
 {
   getAllFilms {
@@ -21,6 +25,8 @@
   }
 }
 ```
+
+## Get certain fields of a certain person
 
 ```graphql
 {

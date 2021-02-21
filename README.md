@@ -22,7 +22,7 @@ $npm run start # or yarn start
 
 # GraphQL query
 
-**More GraphQL query examples here**
+**More GraphQL query examples <a href = "https://github.com/ssandry/lf-api/blob/main/queries.md"><i>here</i></a>**
 
 ```graphql
 {
