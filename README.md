@@ -20,21 +20,6 @@ $npm install # or yarn
 $npm run start # or yarn start
 ```
 
-# GraphQL query
-
-**More GraphQL query examples <a href = "https://github.com/ssandry/lf-api/blob/main/queries.md"><i>here</i></a>**
-
-```graphql
-{
-  getAllPersons {
-    id
-    name
-    countries
-    type
-  }
-}
-```
-
 # GraphQL type description
 
 **GraphQL type Person**
@@ -51,6 +36,21 @@ type Person {
     briefAbout: String!
     filmography: [Card]!
     yearsPopular: [String]!
+}
+```
+
+# GraphQL query
+
+**More GraphQL query examples <a href = "https://github.com/ssandry/lf-api/blob/main/queries.md"><i>here</i></a>**
+
+```graphql
+{
+  getAllPersons {
+    id
+    name
+    countries
+    type
+  }
 }
 ```
 
