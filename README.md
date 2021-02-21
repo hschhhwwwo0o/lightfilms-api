@@ -70,3 +70,9 @@ type Person {
   }
 }
 ```
+
+# Useful documentation
+
+- **https://habr.com/ru/post/424199/**
+- **https://www.apollographql.com/docs/react/data/queries/**
+- **https://www.apollographql.com/docs/react/data/fragments/**
