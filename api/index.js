@@ -2,6 +2,8 @@ const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
 const { buildSchema } = require("graphql");
 const { readFileSync } = require("fs");
+
+// RESOLVERS
 const resolvers = require("./resolvers");
 
 // SCHEMA
