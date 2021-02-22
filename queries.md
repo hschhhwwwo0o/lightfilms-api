@@ -37,3 +37,14 @@
   }
 }
 ```
+
+## Get certain fields of a certain film
+
+```graphql
+{
+  getFilm(id: "0") {
+    id
+    title
+  }
+}
+```
