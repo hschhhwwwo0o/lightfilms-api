@@ -1,10 +1,10 @@
-const express = require("express");
-const { graphqlHTTP } = require("express-graphql");
-const { buildSchema } = require("graphql");
-const { readFileSync } = require("fs");
+import express from "express";
+import { graphqlHTTP } from "express-graphql";
+import { buildSchema } from "graphql";
+import { readFileSync } from "fs";
 
 // RESOLVERS
-const resolvers = require("./resolvers");
+import resolvers from "./resolvers";
 
 // SCHEMA
 const SCHEMAGQL = readFileSync(`${__dirname}/schema.gql`, { encoding: "utf8" });
