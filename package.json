@@ -2,7 +2,7 @@
   "name": "lf-api",
   "version": "1.1.0",
   "description": "API for lightfilms 🌂",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
     "start": "nodemon --exec babel-node ./api/index.js"
   },
@@ -15,7 +15,7 @@
     "express-graphql",
     "graphql"
   ],
-  "author": "@ssandry",
+  "author": "@ssandry <https://github.com/ssandry> <seva007@hotmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ssandry/lf-api/issues"
