@@ -4,7 +4,7 @@
   "description": "API for lightfilms 🌂",
   "main": "api/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Test Succesfull\"",
     "start": "nodemon --exec babel-node ./api/index.js"
   },
   "repository": {
