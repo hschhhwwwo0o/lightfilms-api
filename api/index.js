@@ -14,4 +14,4 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app })
 
-app.listen({ port: 3008 })
+app.listen({ port: process.env.PORT || 3008 })
