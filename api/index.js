@@ -1,23 +1,17 @@
 import express from "express";
-import { graphqlHTTP } from "express-graphql";
-import { buildSchema } from "graphql";
-import { readFileSync } from "fs";
+import { ApolloServer } from "apollo-server-express";
 
 // RESOLVERS
 import resolvers from "./resolvers";
-
-// SCHEMA
-const SCHEMAGQL = readFileSync(`${__dirname}/schema.gql`, { encoding: "utf8" });
-const schema = buildSchema(SCHEMAGQL);
-
-const port = 3008;
+import typeDefs from "./typeDefs";
 
 const app = express();
 
-app.use("/", graphqlHTTP({
-    schema: schema,
-    rootValue: resolvers,
-    graphiql: true
-}))
+const server = new ApolloServer({
+    typeDefs,
+    resolvers
+})
 
-app.listen(process.env.PORT || port);
+server.applyMiddleware({ app })
+
+app.listen({ port: 3008 })
