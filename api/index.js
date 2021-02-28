@@ -9,7 +9,8 @@ const app = express();
 
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+    playground: true
 })
 
 server.applyMiddleware({ app })
