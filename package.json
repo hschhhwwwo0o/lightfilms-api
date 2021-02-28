@@ -5,7 +5,10 @@
   "main": "api/index.js",
   "scripts": {
     "test": "echo \"Test Succesfull\"",
-    "start": "nodemon --exec babel-node ./api/index.js"
+    "dev": "nodemon --exec babel-node ./api/index.js",
+    "babel-node": "babel-node", 
+    "build": "babel api --out-dir dist --source-maps inline", 
+    "deploy": "node ./dist/index.js"
   },
   "repository": {
     "type": "git",
