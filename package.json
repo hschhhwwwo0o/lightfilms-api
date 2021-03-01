@@ -5,9 +5,9 @@
   "main": "api/index.js",
   "scripts": {
     "test": "echo \"Test Succesfull\"",
-    "dev": "nodemon --exec babel-node ./api/index.js",
+    "dev": "nodemon --exec babel-node ./src/index.js",
     "babel-node": "babel-node", 
-    "build": "babel api --out-dir dist --source-maps inline", 
+    "build": "babel src --out-dir dist --source-maps inline", 
     "deploy": "node ./dist/index.js"
   },
   "repository": {
@@ -15,9 +15,10 @@
     "url": "git+https://github.com/ssandry/lf-api.git"
   },
   "keywords": [
-    "express",
-    "express-graphql",
-    "graphql"
+    "Express",
+    "GraphQL",
+    "Babel",
+    "Apollo"
   ],
   "author": "@ssandry <https://github.com/ssandry> <seva007@hotmail.com>",
   "license": "ISC",
