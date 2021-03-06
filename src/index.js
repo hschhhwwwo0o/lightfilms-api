@@ -1,7 +1,7 @@
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 
-// RESOLVERS
+// GraphQl
 import resolvers from "./graphql/resolvers";
 import typeDefs from "./graphql/typeDefs";
 
@@ -16,7 +16,7 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app })
 
-app.listen({ port: process.env.PORT || 3008 }, () => {
-    console.log( "" );
-    console.log('\x1b[36m%s\x1b[0m', `Server has been start on http://localhost:${process.env.PORT || 3008}/graphql`);
+app.listen({ port: process.env.PORT || process.env.DEV_PORT }, () => {
+    console.log("");
+    console.log('\x1b[36m%s\x1b[0m', `Server has been start on http://localhost:${process.env.PORT || process.env.DEV_PORT}/graphql`);
 })
