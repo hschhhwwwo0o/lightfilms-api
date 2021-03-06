@@ -14,9 +14,9 @@ const server = new ApolloServer({
     playground: true,
 });
 
-server.applyMiddleware({ app })
+server.applyMiddleware({ app });
 
 app.listen({ port: process.env.PORT || process.env.DEV_PORT }, () => {
     console.log("");
     console.log('\x1b[36m%s\x1b[0m', `Server has been start on http://localhost:${process.env.PORT || process.env.DEV_PORT}/graphql`);
-})
+});
