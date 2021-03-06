@@ -1,12 +1,11 @@
 {
   "name": "lf-api",
-  "version": "2.1.0",
-  "description": "API for lightfilms 🌂",
+  "version": "2.2.0",
+  "description": "GraphQL API for lightfilms 🌂",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Test Succesfull\"",
     "dev": "nodemon --exec babel-node ./src/index.js",
-    "babel-node": "babel-node",
     "build": "babel src --out-dir dist --source-maps inline",
     "deploy": "node ./dist/index.js"
   },
