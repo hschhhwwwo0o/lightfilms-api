@@ -1,6 +1,5 @@
-<img src = "./md/giphyme.gif" width = "100%" />
 
-# API for the lightfilms repository.
+### API for the lightfilms repository.
 
 # Setup
 
