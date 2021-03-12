@@ -1,5 +1,10 @@
 
-### API for the lightfilms repository.
+### #API for the lightfilms repository.
+
+**Live preview [here]**
+[here]: <https://lightfilms-api.herokuapp.com/graphql>
+
+**Deployed thanks to Heroku**
 
 # Setup
 
