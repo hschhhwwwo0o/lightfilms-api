@@ -1,7 +1,7 @@
 // DATA
-const films = require("../../data/films.json");
-const persons = require("../../data/persons.json");
-const times = require("../../data/times.json");
+import films from "../../data/films.json";
+import persons from "../../data/persons.json";
+import times from "../../data/times.json";
 
 module.exports = {
     Query: {
