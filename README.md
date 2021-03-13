@@ -2,9 +2,8 @@
 ### #API for the lightfilms repository.
 
 **Live preview [here]**
-[here]: <https://lightfilms-api.herokuapp.com/graphql>
 
-**Deployed thanks to Heroku**
+**Deployed thanks to [Heroku]**
 
 # Setup
 
@@ -80,3 +79,6 @@ type Person {
 - **https://habr.com/ru/post/424199/**
 - **https://www.apollographql.com/docs/react/data/queries/**
 - **https://www.apollographql.com/docs/react/data/fragments/**
+
+[here]: <https://lightfilms-api.herokuapp.com/graphql>
+[Heroku]: <https://dashboard.heroku.com/>
