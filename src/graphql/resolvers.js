@@ -1,40 +1,107 @@
-// DATA
-import films from "../../data/films.json";
-import persons from "../../data/persons.json";
-import times from "../../data/times.json";
+require("dotenv").config();
+
+import fetch from "node-fetch";
+
+const __URL = process.env.JSONBIN_DB;
 
 module.exports = {
     Query: {
         getAllFilms: () => {
-            return films;
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.films } )
         },
     
         getAllPersons: () => {
-            return persons;
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.persons } )
         },
     
         getProducers: () => {
-            return persons.filter( (p) => { return p.type === "producer" } )
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.persons.filter( (p) => { return p.type === "producer" } ) } )
+
+            //return persons.filter( (p) => { return p.type === "producer" } )
         },
     
         getActers: () => {
-            return persons.filter( (p) => { return p.type === "acter" } )
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.persons.filter( (p) => { return p.type === "acter" } ) } )
         },
     
         getPerson: ( _, params ) => {
-            return persons.find( ({ id }) => { return id === params.id } )
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.persons.find( ({ id }) => { return id === params.id } ) } )
         },
     
         getFilm: ( _, params ) => {
-            return films.find( ({ id }) => { return id === params.id } )
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.films.find( ({ id }) => { return id === params.id } ) } )
         },
     
         getAllTimes: () => {
-            return times;
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.times } )
         },
         
         getTime: ( _, params ) => {
-            return times.find( ({ id }) => { return id === params.id } )
+
+            let data
+
+            const getData = async () => {
+                const res = await fetch(__URL)
+                data = await res.json()
+            }
+
+            return getData().then( () => { return data.times.find( ({ id }) => { return id === params.id } ) } )
         }
     } 
 }
