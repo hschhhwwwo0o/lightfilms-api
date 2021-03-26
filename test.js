@@ -24,14 +24,16 @@ firebase.initializeApp(firebaseConfig);
 
 let database = firebase.database();
 
-database.ref().child("films").child(0).get().then(
+let data = database.ref().child("films").child(0).get().then(
     (s) => {
         if ( s.exists() ) {
-            console.log(s.val())
+            return s.val()
         }
     }).catch( (error) => {
         console.error(error);
 });
+
+data.then( () => { console.log( data ) } )
   
 
 // let films

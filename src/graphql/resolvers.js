@@ -4,6 +4,28 @@ import fetch from "node-fetch";
 
 const __URL = process.env.JSONBIN_DB;
 
+
+
+var firebase = require("firebase/app");
+
+// Add the Firebase products that you want to use
+require("firebase/database");
+
+var firebaseConfig = {
+    apiKey: "AIzaSyBxNIFC2yeKJLPzRnceEFZCzaOSS-K72Mw",
+    authDomain: "light-2b1fe.firebaseapp.com",
+    databaseURL: "https://light-2b1fe-default-rtdb.firebaseio.com",
+    projectId: "light-2b1fe",
+    storageBucket: "light-2b1fe.appspot.com",
+    messagingSenderId: "879405031957",
+    appId: "1:879405031957:web:c954eeb23bc06fc607e41c",
+    measurementId: "G-MM6HSBWB6C"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+let database = firebase.database();
+
 module.exports = {
     Query: {
         getAllFilms: () => {
@@ -11,11 +33,14 @@ module.exports = {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("films").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.films } )
+            return getData().then( () => { return data } )
         },
     
         getAllPersons: () => {
