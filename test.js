@@ -27,10 +27,7 @@ let database = firebase.database();
 database.ref().child("films").child(0).get().then(
     (s) => {
         if ( s.exists() ) {
-            console.log(s.val());
-        }
-        else {
-            console.log("No data available");
+            console.log(s.val())
         }
     }).catch( (error) => {
         console.error(error);
