@@ -1,37 +1,39 @@
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch");
 
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
 var firebase = require("firebase/app");
 
 // Add the Firebase products that you want to use
-require("firebase/auth");
 require("firebase/database");
 // Set the configuration for your app
 // TODO: Replace with your project's config object
-var config = {
+
+var firebaseConfig = {
     apiKey: "AIzaSyBxNIFC2yeKJLPzRnceEFZCzaOSS-K72Mw",
     authDomain: "light-2b1fe.firebaseapp.com",
-    // For databases not in the us-central1 location, databaseURL will be of the
-    // form https://[databaseName].[region].firebasedatabase.app.
-    // For example, https://your-database-123.europe-west1.firebasedatabase.app
     databaseURL: "https://light-2b1fe-default-rtdb.firebaseio.com",
-    storageBucket: "light-2b1fe.appspot.com"
+    projectId: "light-2b1fe",
+    storageBucket: "light-2b1fe.appspot.com",
+    messagingSenderId: "879405031957",
+    appId: "1:879405031957:web:c954eeb23bc06fc607e41c",
+    measurementId: "G-MM6HSBWB6C"
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 let database = firebase.database();
 
-database.ref().child("films").child(1).get().then(function(snapshot) {
-    if (snapshot.exists()) {
-      console.log(snapshot.val());
-    }
-    else {
-      console.log("No data available");
-    }
-  }).catch(function(error) {
-    console.error(error);
+database.ref().child("films").child(0).get().then(
+    (s) => {
+        if ( s.exists() ) {
+            console.log(s.val());
+        }
+        else {
+            console.log("No data available");
+        }
+    }).catch( (error) => {
+        console.error(error);
 });
   
 
