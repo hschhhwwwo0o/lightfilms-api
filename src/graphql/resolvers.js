@@ -4,29 +4,18 @@ import fetch from "node-fetch";
 
 const __URL = process.env.JSONBIN_DB;
 
+// Firebase
+import firebase from "firebase/app";
+import "firebase/database";
 
+// Firebase config
+import firebaseConfig from "../firebase.config"
 
-var firebase = require("firebase/app");
-
-// Add the Firebase products that you want to use
-require("firebase/database");
-
-var firebaseConfig = {
-    apiKey: "AIzaSyBxNIFC2yeKJLPzRnceEFZCzaOSS-K72Mw",
-    authDomain: "light-2b1fe.firebaseapp.com",
-    databaseURL: "https://light-2b1fe-default-rtdb.firebaseio.com",
-    projectId: "light-2b1fe",
-    storageBucket: "light-2b1fe.appspot.com",
-    messagingSenderId: "879405031957",
-    appId: "1:879405031957:web:c954eeb23bc06fc607e41c",
-    measurementId: "G-MM6HSBWB6C"
-};
-
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
 
-let database = firebase.database();
-
-module.exports = {
+export default {
     Query: {
         getAllFilms: () => {
 
