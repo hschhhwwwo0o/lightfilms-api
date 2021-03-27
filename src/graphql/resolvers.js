@@ -99,11 +99,16 @@ export default {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("films").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.films.find( ({ id }) => { return id === params.id } ) } )
+            return getData().then( () => { return data.find( ({ id }) => { return id === params.id } ) } )
+
+            // return getData().then( () => { return data.films.find( ({ id }) => { return id === params.id } ) } )
         },
     
         getAllTimes: () => {
@@ -111,11 +116,16 @@ export default {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("times").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.times } )
+            return getData().then( () => { return data } )
+
+            // return getData().then( () => { return data.times } )
         },
         
         getTime: ( _, params ) => {
@@ -123,11 +133,16 @@ export default {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("times").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.times.find( ({ id }) => { return id === params.id } ) } )
+            return getData().then( () => { return data.find( ({ id }) => { return id === params.id } ) } )
+
+            // return getData().then( () => { return data.times.find( ({ id }) => { return id === params.id } ) } )
         }
     } 
 }
