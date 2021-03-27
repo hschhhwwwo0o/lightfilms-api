@@ -78,14 +78,14 @@ export default {
             let data
 
             const getData = async () => {
-                await database.ref().child("persons").get()
+                await database.ref().child(`/persons/${params.id}`).get()
                 .then( 
                     (s) => { if ( s.exists() ) {  data = s.val() } }
                 )
                 .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.find( ({ id }) => { return id === params.id } ) } )
+            return getData().then( () => { return data } )
         },
     
         getFilm: ( _, params ) => {
@@ -93,14 +93,14 @@ export default {
             let data
 
             const getData = async () => {
-                await database.ref().child("films").get()
+                await database.ref().child(`/films/${params.id}`).get()
                 .then( 
                     (s) => { if ( s.exists() ) {  data = s.val() } }
                 )
                 .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.find( ({ id }) => { return id === params.id } ) } )
+            return getData().then( () => { return data } )
 
             // return getData().then( () => { return data.films.find( ({ id }) => { return id === params.id } ) } )
         },
