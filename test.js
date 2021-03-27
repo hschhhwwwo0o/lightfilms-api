@@ -24,10 +24,12 @@ firebase.initializeApp(firebaseConfig);
 
 let database = firebase.database();
 
-let data = database.ref().child("films").child(0).get().then(
+let data = database.ref("persons").orderByChild("type").equalTo("acter").get().then(
     (s) => {
         if ( s.exists() ) {
-            return s.val()
+            return s.val().filter( (el) => {
+                return el != null;
+            });
         }
     }).catch( (error) => {
         console.error(error);
