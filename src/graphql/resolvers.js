@@ -1,9 +1,3 @@
-require("dotenv").config();
-
-import fetch from "node-fetch";
-
-const __URL = process.env.JSONBIN_DB;
-
 // Firebase
 import firebase from "firebase/app";
 import "firebase/database";
