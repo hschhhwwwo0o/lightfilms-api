@@ -5,9 +5,6 @@ import { ApolloServer } from "apollo-server-express";
 import resolvers from "./graphql/resolvers";
 import typeDefs from "./graphql/typeDefs";
 
-// Firebase
-import firebaseConfig from "./firebase.config";
-
 const app = express();
 
 const DEV_PORT = 3008;
