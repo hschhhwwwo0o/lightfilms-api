@@ -37,11 +37,14 @@ export default {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("persons").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.persons } )
+            return getData().then( () => { return data } )
         },
     
         getProducers: () => {
@@ -49,13 +52,14 @@ export default {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("persons").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.persons.filter( (p) => { return p.type === "producer" } ) } )
-
-            //return persons.filter( (p) => { return p.type === "producer" } )
+            return getData().then( () => { return data.filter( (p) => { return p.type === "producer" } ) } )
         },
     
         getActers: () => {
@@ -63,11 +67,16 @@ export default {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("persons").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.persons.filter( (p) => { return p.type === "acter" } ) } )
+            return getData().then( () => { return data.filter( (p) => { return p.type === "acter" } ) } )
+
+            // return getData().then( () => { return data.persons.filter( (p) => { return p.type === "acter" } ) } )
         },
     
         getPerson: ( _, params ) => {
@@ -75,11 +84,14 @@ export default {
             let data
 
             const getData = async () => {
-                const res = await fetch(__URL)
-                data = await res.json()
+                await database.ref().child("persons").get()
+                .then( 
+                    (s) => { if ( s.exists() ) {  data = s.val() } }
+                )
+                .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data.persons.find( ({ id }) => { return id === params.id } ) } )
+            return getData().then( () => { return data.find( ({ id }) => { return id === params.id } ) } )
         },
     
         getFilm: ( _, params ) => {
