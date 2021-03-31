@@ -4,7 +4,7 @@
 **Live preview [here]**
 **Deployed thanks to [Heroku]**
 
-# Setup
+## Setup
 
 **Install && Setup project**
 
