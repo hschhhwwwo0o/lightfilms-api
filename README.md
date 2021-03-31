@@ -1,8 +1,7 @@
 
-# 📡 API for the lightfilms repository.
+## 📡 API for the lightfilms repository.
 
 **Live preview [here]**
-
 **Deployed thanks to [Heroku]**
 
 # Setup
@@ -15,7 +14,7 @@ $cd lf-api
 $npm install # or yarn 
 ```
 
-# Start
+## Start
 
 **Console command for start GraphQL server**
 
@@ -23,7 +22,7 @@ $npm install # or yarn
 $npm run start # or yarn start
 ```
 
-# GraphQL type description
+## GraphQL type description
 
 **GraphQL type Person.**
 **Check all types <a href = "https://github.com/ssandry/lf-api/blob/main/api/schema.gql"><i>here</i></a>**
@@ -43,7 +42,7 @@ type Person {
 }
 ```
 
-# GraphQL query
+## GraphQL query
 
 **More GraphQL query examples <a href = "https://github.com/ssandry/lf-api/blob/main/queries.md"><i>here</i></a>**
 
@@ -58,7 +57,7 @@ type Person {
 }
 ```
 
-# Example of a GraphQL response
+## Example of a GraphQL response
 
 ```json
 {
@@ -74,7 +73,7 @@ type Person {
 }
 ```
 
-# Useful documentation
+## Useful documentation
 
 - **https://habr.com/ru/post/424199/**
 - **https://www.apollographql.com/docs/react/data/queries/**
