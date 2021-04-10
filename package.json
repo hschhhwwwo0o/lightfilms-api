@@ -15,10 +15,10 @@
     "url": "git+https://github.com/ssandry/lf-api.git"
   },
   "keywords": [
-    "Express",
-    "GraphQL",
-    "Babel",
-    "Apollo"
+    "Express", "GraphQL",
+    "Babel", "Apollo",
+    "Apollo-Client", "Firebase",
+    "API"
   ],
   "author": "@ssandry <https://github.com/ssandry> <seva007@hotmail.com>",
   "license": "ISC",
