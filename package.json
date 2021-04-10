@@ -2,7 +2,7 @@
   "name": "lf-api",
   "version": "2.5.0",
   "description": "GraphQL API for lightfilms 🌂",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Test Succesfull\"",
     "dev": "nodemon --exec babel-node ./src/index.js",
