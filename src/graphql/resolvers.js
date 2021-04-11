@@ -4,7 +4,7 @@ export default {
     Query: {
         getAllFilms: () => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child("films").get()
@@ -14,12 +14,12 @@ export default {
                 .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data } )
+            return getData().then( () => data )
         },
     
         getAllPersons: () => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child("persons").get()
@@ -29,12 +29,12 @@ export default {
                 .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data } )
+            return getData().then( () => data )
         },
     
         getProducers: () => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child("persons").get()
@@ -49,7 +49,7 @@ export default {
     
         getActers: () => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child("persons").get()
@@ -66,7 +66,7 @@ export default {
     
         getPerson: ( _, params ) => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child(`/persons/${params.id}`).get()
@@ -76,12 +76,12 @@ export default {
                 .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data } )
+            return getData().then( () => data )
         },
     
         getFilm: ( _, params ) => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child(`/films/${params.id}`).get()
@@ -91,14 +91,14 @@ export default {
                 .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data } )
+            return getData().then( () => data )
 
             // return getData().then( () => { return data.films.find( ({ id }) => { return id === params.id } ) } )
         },
     
         getAllTimes: () => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child("times").get()
@@ -108,14 +108,14 @@ export default {
                 .catch( (error) => { console.error(error) });
             }
 
-            return getData().then( () => { return data } )
+            return getData().then( () => data )
 
             // return getData().then( () => { return data.times } )
         },
         
         getTime: ( _, params ) => {
 
-            let data
+            let data;
 
             const getData = async () => {
                 await database.ref().child("times").get()
