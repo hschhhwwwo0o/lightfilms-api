@@ -2,7 +2,7 @@
 
 ## 📡 API for the lightfilms repository.
 
-**Live preview [here]**
+**Live preview [here]** <br />
 **Deployed thanks to [Heroku]**
 
 ## Setup
