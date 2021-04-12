@@ -1,4 +1,4 @@
-<img src="./md/Frame.png" width="100%" />
+<img src="./md/FR.png" width="100%" />
 
 ## 📡 API for the lightfilms repository.
 
