@@ -29,17 +29,19 @@ $npm run start # or yarn start
 **Check all types <a href = "https://github.com/ssandry/lf-api/blob/main/api/schema.gql"><i>here</i></a>**
 
 ```graphql
-type Person {
+type Film {
     id: ID!
-    name: String!
     title: String!
-    countries: [String]!
-    imgs: [String]!
-    type: String!
-    about: About2!
+    producedBy: String!
+    coverIMG: String!
+    genres: [String]
+    countries: [String]
+    year: String!
+    producer: Card!
+    collage: String!
     briefAbout: String!
-    filmography: [Card]!
-    yearsPopular: [String]!
+    about: About!
+    acters: [Card]!
 }
 ```
 
@@ -49,11 +51,10 @@ type Person {
 
 ```graphql
 {
-  getAllPersons {
+  getAllFilms {
     id
-    name
-    countries
-    type
+    title
+    briefAbout
   }
 }
 ```
