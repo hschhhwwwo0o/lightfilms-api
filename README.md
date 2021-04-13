@@ -1,4 +1,4 @@
-<img src="./md/FR.png" width="100%" />
+<img src="./md/__frame.png" width="100%" />
 
 ## 📡 API for the lightfilms repository.
 
@@ -17,7 +17,7 @@ $npm install # or yarn
 
 ## Start
 
-**Console command for start GraphQL server**
+**Start GraphQL server**
 
 ```sh
 $npm run start # or yarn start
