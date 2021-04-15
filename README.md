@@ -7,6 +7,7 @@
 
 ## Setup
 
+**To start, you need a [NodeJS]** <br />
 **Install && Setup project**
 
 ```sh
@@ -25,23 +26,19 @@ $npm run start # or yarn start
 
 ## GraphQL type description
 
-**GraphQL type Person.**
+**GraphQL type Film**
 **Check all types <a href = "https://github.com/ssandry/lf-api/blob/main/api/schema.gql"><i>here</i></a>**
 
 ```graphql
 type Film {
     id: ID!
     title: String!
-    producedBy: String!
     coverIMG: String!
     genres: [String]
     countries: [String]
     year: String!
     producer: Card!
-    collage: String!
-    briefAbout: String!
     about: About!
-    acters: [Card]!
 }
 ```
 
@@ -54,7 +51,7 @@ type Film {
   getAllFilms {
     id
     title
-    briefAbout
+    about
   }
 }
 ```
@@ -68,7 +65,7 @@ type Film {
       {
         "id": "0",
         "title": "Male-female",
-        "briefAbout": "About Film"
+        "about": "About Film"
       }
     ]
   }
@@ -83,3 +80,4 @@ type Film {
 
 [here]: <https://lightfilms-api.herokuapp.com/graphql>
 [Heroku]: <https://dashboard.heroku.com/>
+[NodeJS]: <https://dashboard.heroku.com/>
