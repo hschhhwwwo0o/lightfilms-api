@@ -1,6 +1,6 @@
 <img src="./md/__frame.png" width="100%" />
 
-## 📡 API for the lightfilms repository.
+## 🚀 API for the lightfilms repository.
 
 **Live preview [here]** <br />
 **Deployed thanks to [Heroku]**
