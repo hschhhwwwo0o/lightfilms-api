@@ -26,7 +26,7 @@ $npm run start # or yarn start
 
 ## GraphQL type description
 
-**GraphQL type Film**
+**GraphQL type Film** <br />
 **Check all types <a href = "https://github.com/ssandry/lf-api/blob/main/api/schema.gql"><i>here</i></a>**
 
 ```graphql
