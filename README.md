@@ -1,6 +1,8 @@
-<img src="./md/__frame.png" width="100%" />
+![API Presentation](md/__frame.png "API Presentation")
 
-## 🚀 API for the lightfilms repository.
+## 🚀 API for the lightfilms repository
+
+**[LIGHTFILMS]** <br />
 
 **Live preview [here]** <br />
 **Deployed thanks to [Heroku]**
@@ -78,6 +80,7 @@ type Film {
 - **https://www.apollographql.com/docs/react/data/queries/**
 - **https://www.apollographql.com/docs/react/data/fragments/**
 
+[LIGHTFILMS]: <https://github.com/ssandry/lightfilms>
 [here]: <https://lightfilms-api.herokuapp.com/graphql>
 [Heroku]: <https://dashboard.heroku.com/>
 [NodeJS]: <https://dashboard.heroku.com/>
