@@ -60,8 +60,6 @@ export default {
             }
 
             return getData().then( () => { return data.filter( (p) => { return p.type === "acter" } ) } )
-
-            // return getData().then( () => { return data.persons.filter( (p) => { return p.type === "acter" } ) } )
         },
     
         getPerson: ( _, params ) => {
@@ -92,8 +90,6 @@ export default {
             }
 
             return getData().then( () => data )
-
-            // return getData().then( () => { return data.films.find( ({ id }) => { return id === params.id } ) } )
         },
     
         getAllTimes: () => {
@@ -109,8 +105,6 @@ export default {
             }
 
             return getData().then( () => data )
-
-            // return getData().then( () => { return data.times } )
         },
         
         getTime: ( _, params ) => {
@@ -126,8 +120,6 @@ export default {
             }
 
             return getData().then( () => { return data.find( ({ id }) => { return id === params.id } ) } )
-
-            // return getData().then( () => { return data.times.find( ({ id }) => { return id === params.id } ) } )
         }
     } 
 }
