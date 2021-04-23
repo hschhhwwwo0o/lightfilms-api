@@ -18,6 +18,12 @@ const server = new ApolloServer({
 server.applyMiddleware({ app });
 
 app.listen({ port: process.env.PORT || DEV_PORT }, () => {
+    const color = "\x1b[36m%s\x1b[0m";
     console.log("");
-    console.log("\x1b[36m%s\x1b[0m", `Server has been start on http://localhost:${ process.env.PORT || DEV_PORT }/graphql`);
+
+    if( process.env.PORT !== undefined ) {
+        console.log(color, `Server has been start on http://localhost:${ process.env.PORT }/graphql`);
+    } else {
+        console.log(color, `Server has been start on http://localhost:${ DEV_PORT }/graphql`);
+    }
 });
