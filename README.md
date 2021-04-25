@@ -8,29 +8,7 @@
 **Deployed thanks to [Heroku]** <br />
 **Database: [Firebase]**
 
-## Setup
-
-**To start, you need a [NodeJS]** <br />
-**Install && Setup project**
-
-```sh
-$git clone https://github.com/ssandry/lf-api.git
-$cd lf-api
-$npm install # or yarn 
-```
-
-## Start
-
-**Start GraphQL server**
-
-```sh
-$npm run start # or yarn start
-```
-
 ## GraphQL type description
-
-**GraphQL type Film** <br />
-**Check all types <a href = "https://github.com/ssandry/lf-api/blob/main/api/schema.gql"><i>here</i></a>**
 
 ```graphql
 type Film {
@@ -46,8 +24,6 @@ type Film {
 ```
 
 ## GraphQL query
-
-**More GraphQL query examples <a href = "https://github.com/ssandry/lf-api/blob/main/queries.md"><i>here</i></a>**
 
 ```graphql
 {
