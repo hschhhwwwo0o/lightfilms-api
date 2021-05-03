@@ -1,4 +1,4 @@
-![API Presentation](md/__frame.png "API Presentation")
+![API Presentation](md/__preview.png "API Presentation")
 
 ## API for the lightfilms repository
 
