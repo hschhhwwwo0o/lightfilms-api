@@ -6,7 +6,7 @@ export default {
             let data;
             const getData = async () => {
                 await database.ref().child("films").get()
-                .then((s) => { if ( s.exists() ) {  data = s.val() }})
+                .then((s) => { if ( s.exists() ) { data = s.val() }})
                 .catch((error) => { console.error(error) });
             }
 
@@ -18,7 +18,7 @@ export default {
             const getData = async () => {
                 await database.ref()
                 .child("persons").get()
-                .then((s) => { if ( s.exists() ) {  data = s.val() }})
+                .then((s) => { if ( s.exists() ) { data = s.val() }})
                 .catch((error) => { console.error(error) });
             }
 
@@ -30,7 +30,7 @@ export default {
             const getData = async () => {
                 await database.ref()
                 .child("persons").get()
-                .then((s) => { if ( s.exists() ) {  data = s.val() }})
+                .then((s) => { if ( s.exists() ) { data = s.val() }})
                 .catch((error) => { console.error(error) });
             }
 
