@@ -6,7 +6,6 @@ const typeDefs = gql`
         h3: String!
         h6top: String!
         h6bot: String!
-
         img: String
         imgs: [String]
     }
