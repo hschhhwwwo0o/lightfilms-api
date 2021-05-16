@@ -31,7 +31,7 @@ export default {
         },
         
         getTime: (_, {id}) => {
-            return firebaseRequest(`/times/${id}`);
+            return firebaseRequest("times", "find", id);
         }
     } 
 }
