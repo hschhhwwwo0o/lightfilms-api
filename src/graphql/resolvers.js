@@ -8,9 +8,9 @@ export default {
                 await database.ref().child("films").get()
                 .then((s) => { if ( s.exists() ) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
-            return getData().then( () => data )
+            return getData().then( () => data );
         },
     
         getAllPersons: () => {
@@ -20,9 +20,9 @@ export default {
                 .child("persons").get()
                 .then((s) => { if ( s.exists() ) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
-            return getData().then( () => data )
+            return getData().then( () => data );
         },
     
         getProducers: () => {
@@ -32,11 +32,11 @@ export default {
                 .child("persons").get()
                 .then((s) => { if ( s.exists() ) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
             return getData().then(() => { 
-                return data.filter((p) => { return p.type === "producer" })
-            })
+                return data.filter((p) => { return p.type === "producer" });
+            });
         },
     
         getActers: () => {
@@ -46,11 +46,11 @@ export default {
                 .child("persons").get()
                 .then((s) => { if (s.exists()) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
             return getData().then(() => { 
-                return data.filter((p) => { return p.type === "acter" })
-            })
+                return data.filter((p) => { return p.type === "acter" });
+            });
         },
     
         getPerson: ( _, params ) => {
@@ -60,9 +60,9 @@ export default {
                 .child(`/persons/${params.id}`).get()
                 .then((s) => { if (s.exists()) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
-            return getData().then(() => data)
+            return getData().then(() => data);
         },
     
         getFilm: ( _, params ) => {
@@ -72,9 +72,9 @@ export default {
                 .child(`/films/${params.id}`).get()
                 .then((s) => { if (s.exists()) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
-            return getData().then( () => data )
+            return getData().then( () => data );
         },
     
         getAllTimes: () => {
@@ -84,9 +84,9 @@ export default {
                 .child("times").get()
                 .then((s) => { if (s.exists()) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
-            return getData().then( () => data )
+            return getData().then( () => data );
         },
         
         getTime: ( _, params ) => {
@@ -96,11 +96,11 @@ export default {
                 .child("times").get()
                 .then((s) => { if (s.exists()) { data = s.val() }})
                 .catch((error) => { console.error(error) });
-            }
+            };
 
             return getData().then(() => { 
-                return data.find( ({ id }) => { return id === params.id }) 
-            })
+                return data.find( ({ id }) => { return id === params.id }) ;
+            });
         }
     } 
 }
