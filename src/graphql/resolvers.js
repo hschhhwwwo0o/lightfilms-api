@@ -1,106 +1,37 @@
-import database from "../firebase/index.js";
+import firebaseRequest from "../firebase/firebase.request";
 
 export default {
     Query: {
         getAllFilms: () => {
-            let data;
-            const getData = async () => {
-                await database.ref().child("films").get()
-                .then((s) => { if ( s.exists() ) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then( () => data );
+            return firebaseRequest("films");
         },
     
         getAllPersons: () => {
-            let data;
-            const getData = async () => {
-                await database.ref()
-                .child("persons").get()
-                .then((s) => { if ( s.exists() ) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then( () => data );
+            return firebaseRequest("persons");
         },
     
         getProducers: () => {
-            let data;
-            const getData = async () => {
-                await database.ref()
-                .child("persons").get()
-                .then((s) => { if ( s.exists() ) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then(() => { 
-                return data.filter((p) => { return p.type === "producer" });
-            });
+            return firebaseRequest("persons", "filter", "producer");
         },
     
         getActers: () => {
-            let data;
-            const getData = async () => {
-                await database.ref()
-                .child("persons").get()
-                .then((s) => { if (s.exists()) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then(() => { 
-                return data.filter((p) => { return p.type === "acter" });
-            });
+            return firebaseRequest("persons", "filter", "acter");
         },
     
-        getPerson: ( _, params ) => {
-            let data;
-            const getData = async () => {
-                await database.ref()
-                .child(`/persons/${params.id}`).get()
-                .then((s) => { if (s.exists()) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then(() => data);
+        getPerson: (_, {id}) => {
+            return firebaseRequest(`/persons/${id}`);
         },
     
-        getFilm: ( _, params ) => {
-            let data;
-            const getData = async () => {
-                await database.ref()
-                .child(`/films/${params.id}`).get()
-                .then((s) => { if (s.exists()) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then( () => data );
+        getFilm: (_, {id}) => {
+            return firebaseRequest(`/films/${id}`);
         },
     
         getAllTimes: () => {
-            let data;
-            const getData = async () => {
-                await database.ref()
-                .child("times").get()
-                .then((s) => { if (s.exists()) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then( () => data );
+            return firebaseRequest("times");
         },
         
-        getTime: ( _, params ) => {
-            let data;
-            const getData = async () => {
-                await database.ref()
-                .child("times").get()
-                .then((s) => { if (s.exists()) { data = s.val() }})
-                .catch((error) => { console.error(error) });
-            };
-
-            return getData().then(() => { 
-                return data.find( ({ id }) => { return id === params.id }) ;
-            });
+        getTime: (_, {id}) => {
+            return firebaseRequest(`/times/${id}`);
         }
     } 
 }
