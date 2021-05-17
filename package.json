@@ -15,10 +15,14 @@
     "url": "git+https://github.com/ssandry/lf-api.git"
   },
   "keywords": [
-    "Express", "GraphQL",
-    "Babel", "Apollo",
-    "Apollo-Client", "Firebase",
-    "Heroku", "API"
+    "Express",
+    "GraphQL",
+    "Babel",
+    "Apollo",
+    "Apollo-Client",
+    "Firebase",
+    "Heroku",
+    "API"
   ],
   "author": "@ssandry <https://github.com/ssandry> <seva007@hotmail.com>",
   "license": "ISC",
@@ -27,10 +31,10 @@
   },
   "homepage": "https://github.com/ssandry/lf-api#readme",
   "dependencies": {
-    "apollo-server-express": "^2.22.2",
+    "apollo-server-express": "^2.24.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "firebase": "^8.3.3",
+    "firebase": "^8.6.1",
     "graphql": "^15.5.0",
     "node-fetch": "^2.6.1"
   },
