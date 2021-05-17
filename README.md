@@ -2,10 +2,10 @@
 
 ## API for the lightfilms repository
 
-**[LIGHTFILMS]** <br />
+**[LIGHTFILMS]**
 
-**Live preview [here]** <br />
-**Deployed thanks to [Heroku]** <br />
+**Live preview [here]** \
+**Deployed thanks to [Heroku]** \
 **Database: [Firebase]**
 
 ## GraphQL type description
