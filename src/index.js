@@ -5,8 +5,6 @@ import typeDefs from "./graphql/typeDefs";
 
 const app = express();
 
-const DEV_PORT = 3008;
-
 const server = new ApolloServer({
     typeDefs,
     resolvers,
@@ -16,10 +14,10 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app });
 
-app.listen({ port: process.env.PORT || DEV_PORT }, () => {
+app.listen({ port: process.env.PORT || 3008 }, () => {
     console.log("");
 
     process.env.PORT !== undefined ?
     console.log(`Server has been start on http://localhost:${ process.env.PORT }/graphql`) :
-    console.log(`Server has been start on http://localhost:${ DEV_PORT }/graphql`)
+    console.log("Server has been start on http://localhost:3008/graphql");
 });
