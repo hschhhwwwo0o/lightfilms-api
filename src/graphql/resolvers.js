@@ -34,4 +34,4 @@ export default {
             return firebaseRequest("times", "find", id);
         }
     } 
-}
+};
