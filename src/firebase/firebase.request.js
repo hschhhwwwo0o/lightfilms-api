@@ -1,7 +1,6 @@
 import database from ".";
 
 export default (child, sort, parametr) => {
-
     let data;
 
     const getData = async (child) => {
@@ -10,20 +9,21 @@ export default (child, sort, parametr) => {
         .catch((error) => { console.error(error) });
     };
 
-    if(sort === "all" || sort === undefined) 
-    {
-        return getData(child).then(() => { return data });
-    } 
-    else if(sort === "filter") 
-    {
+    if(sort === "all" || sort === undefined) {
         return getData(child).then(() => { 
-            return data.filter(({ type }) => { return type === parametr });
+            return data 
         });
-    } 
-    else if(sort === "find") 
-    {
+    } else if(sort === "filter") {
         return getData(child).then(() => { 
-            return data.find(({ id }) => { return id === parametr});
+            return data.filter(({ type }) => { 
+                return type === parametr 
+            });
+        });
+    } else if(sort === "find") {
+        return getData(child).then(() => { 
+            return data.find(({ id }) => { 
+                return id === parametr
+            });
         });
     };
 };
