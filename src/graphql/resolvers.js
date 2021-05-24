@@ -18,11 +18,11 @@ export default {
             return firebaseRequest("persons", "filter", "acter");
         },
     
-        getPerson: (_, {id}) => {
+        getPerson: (_, { id }) => {
             return firebaseRequest(`/persons/${id}`);
         },
     
-        getFilm: (_, {id}) => {
+        getFilm: (_, { id }) => {
             return firebaseRequest(`/films/${id}`);
         },
     
@@ -30,7 +30,7 @@ export default {
             return firebaseRequest("times");
         },
         
-        getTime: (_, {id}) => {
+        getTime: (_, { id }) => {
             return firebaseRequest("times", "find", id);
         }
     } 
