@@ -13,7 +13,7 @@ export default (child, sort, parametr) => {
         return getData(child).then(() => { 
             return data 
         });
-    } else if(sort === "filter") {
+    } else if(sort === "filter" || sort === "f") {
         return getData(child).then(() => { 
             return data.filter(({ type }) => { 
                 return type === parametr 
