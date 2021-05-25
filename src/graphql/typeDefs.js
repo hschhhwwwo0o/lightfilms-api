@@ -73,6 +73,6 @@ const typeDefs = gql`
         getTime(id: ID!): Time!
         getAllTimes: [Time]!
     }
-`
+`;
 
 export default typeDefs;
