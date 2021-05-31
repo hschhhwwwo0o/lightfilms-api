@@ -8,6 +8,8 @@
 **Deployed thanks to [Heroku]** \
 **Database: [Firebase]**
 
+**Used package manager: [NPM]**
+
 ## GraphQL type description
 
 ```graphql
@@ -62,3 +64,4 @@ type Film {
 [Firebase]: <https://firebase.google.com/>
 [Heroku]: <https://dashboard.heroku.com/>
 [NodeJS]: <https://dashboard.heroku.com/>
+[NPM]: <https://www.npmjs.com/>
