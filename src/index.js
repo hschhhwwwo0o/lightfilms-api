@@ -5,6 +5,9 @@ import typeDefs from "./graphql/typeDefs";
 
 const app = express();
 
+/**
+ * Make server 
+*/
 const server = new ApolloServer({
     typeDefs,
     resolvers,
@@ -12,8 +15,14 @@ const server = new ApolloServer({
     playground: true,
 });
 
+/**
+ * Apply Middleware on server. (Express) 
+*/
 server.applyMiddleware({ app });
 
+/**
+ * Run server
+*/
 app.listen({ port: process.env.PORT || 3008 }, () => {
     console.log("");
 
