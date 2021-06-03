@@ -1,7 +1,11 @@
 require("dotenv").config();
 
 /**
+ * 
  * Initializing firebase config 
+ * 
+ * dotenv: https://www.npmjs.com/package/dotenv
+ * 
 */
 
 export default {

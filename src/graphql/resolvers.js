@@ -1,5 +1,14 @@
 import firebaseRequest from "../firebase/firebase.request";
 
+
+/**
+ * 
+ * @namespace Query
+ * 
+ *  Initialize Query object for GraphQL 
+ * 
+*/
+
 export default {
     Query: {
 

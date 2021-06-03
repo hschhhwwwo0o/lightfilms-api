@@ -1,5 +1,16 @@
 import { gql } from "apollo-server-express";
 
+/**
+ * 
+ * @namespace typeDefs
+ * 
+ * TypeDefs (Schema) for GraphQL 
+ * An object that describes the existing entities and their fields
+ * 
+ * Read more about typedefs: https://graphql.org/learn/schema/
+ * 
+*/
+
 const typeDefs = gql`
     type Card {
         id: ID!

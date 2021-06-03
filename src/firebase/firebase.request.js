@@ -23,7 +23,7 @@ const requestFirebase = (child, sort, parametr) => {
      * 
      * @param {string} child Childs databse. Example: "persons", "films", "times"
      * 
-     * @returns {Promise} Data from firebase
+     * @returns {void} Write data in variable
     */
 
     const getData = async (child) => {

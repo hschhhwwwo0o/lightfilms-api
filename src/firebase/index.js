@@ -3,6 +3,10 @@ import "firebase/database";
 import firebaseConfig from "./firebase.config";
 
 /**
- *  Initializing the database Firebase 
+ * 
+ * Initializing the database Firebase 
+ * 
+ * Firebase documentation: https://firebase.google.cn/docs
+ * 
 */
 export default firebase.initializeApp(firebaseConfig).database();
