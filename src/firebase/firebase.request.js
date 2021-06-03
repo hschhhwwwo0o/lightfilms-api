@@ -1,13 +1,38 @@
 import database from ".";
 
-export default (child, sort, parametr) => {
+
+/**
+ * 
+ * Make request in firebase database
+ * 
+ * @example firebaseRequest("persons", "filter", "producer");
+ * 
+ * @param {string} child Childs databse. Example: "persons", "films", "times"
+ * @param {string} sort Sort type. "all", or undefined (blank) - no sorting required. Example sort types: "filter", "find"
+ * @param {string} parametr Parametr for sorting 
+ * 
+ * @returns Data from firebase
+*/
+
+const requestFirebase = (child, sort, parametr) => {
     let data;
+
+    
+    /**
+     * 
+     * Function get data from firebase and writes to a variable data
+     * 
+     * @param {string} child Childs databse. Example: "persons", "films", "times"
+     * 
+     * @returns {Promise} Data from firebase
+    */
 
     const getData = async (child) => {
         await database.ref().child(child).get()
         .then((s) => { if ( s.exists() ) { data = s.val() }})
         .catch((error) => { console.error(error) });
     };
+
 
     if(sort === "all" || sort === undefined) {
         return getData(child).then(() => { 
@@ -27,3 +52,5 @@ export default (child, sort, parametr) => {
         });
     };
 };
+
+export default requestFirebase;
