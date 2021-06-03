@@ -35,16 +35,45 @@ const requestFirebase = (child, sort, parametr) => {
 
 
     if(sort === "all" || sort === undefined) {
+
+        /**
+         * 
+         * Without sorting 
+         * 
+         * @returns {Array} Return all data. Without sorting 
+         * 
+        */
         return getData(child).then(() => { 
             return data 
         });
-    } else if(sort === "filter" || sort === "f") {
+
+    }
+    else if(sort === "filter" || sort === "f") {
+
+        /**
+         * 
+         * Allow filter.
+         * Use arg "parametr" for sorting 
+         * 
+         * @return {Array} Return sorted data
+         * 
+        */
         return getData(child).then(() => { 
             return data.filter(({ type }) => { 
                 return type === parametr 
             });
         });
-    } else if(sort === "find") {
+    } 
+    else if(sort === "find") {
+
+        /**
+         * 
+         * Allow filter.
+         * Use arg "parametr" for find object on ID 
+         * 
+         * @return {Object} Return finded object
+         * 
+        */
         return getData(child).then(() => { 
             return data.find(({ id }) => { 
                 return id === parametr
