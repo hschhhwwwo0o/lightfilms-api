@@ -8,6 +8,7 @@
     "dev": "nodemon --exec babel-node ./src/index.js",
     "build": "babel src --out-dir dist --source-maps inline",
     "deploy": "node ./dist/index.js",
+    "docs": "jsdoc -c ./jsdoc.config.json",
     "audit": "npm audit fix"
   },
   "repository": {
