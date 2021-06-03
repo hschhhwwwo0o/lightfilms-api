@@ -16,7 +16,6 @@ import database from ".";
 
 const requestFirebase = (child, sort, parametr) => {
     let data;
-
     
     /**
      * 
