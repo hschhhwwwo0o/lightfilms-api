@@ -5,7 +5,9 @@ export default {
 
         /**
          * 
-         * Make request
+         * getAllFilms request
+         * 
+         * @example getAllFilms { id }
          * 
          * @returns {Array} Films array. Without sorting
         */
@@ -15,7 +17,9 @@ export default {
     
         /**
          * 
-         * Make request
+         * getAllPersons request
+         * 
+         * @example getAllPersons { id }
          * 
          * @returns {Array} Persons array. Without sorting
         */
@@ -25,7 +29,9 @@ export default {
     
         /**
          * 
-         * Make request
+         * getProducers request
+         * 
+         * @example getProducers { id }
          * 
          * @returns {Array} Persons array. With "producer" type sorting. Sort type = "filter"
         */
@@ -35,7 +41,9 @@ export default {
     
         /**
          * 
-         * Make request
+         * getActers request
+         * 
+         * @example getActers { id }
          * 
          * @returns {Array} Persons array. With "acter" type sorting. Sort type = "filter"
         */
@@ -45,7 +53,9 @@ export default {
     
         /**
          * 
-         * Make request
+         * getPerson request
+         * 
+         * @example getPerson(id: 1) { id }
          * 
          * @returns {Object} Finds an person object by id. Sort type = "find"
         */
@@ -55,7 +65,9 @@ export default {
     
         /**
          * 
-         * Make request
+         * getFilm request
+         * 
+         * @example getFilm(id: 1) { title }
          * 
          * @returns {Object} Finds an film object by id. Sort type = "find"
         */
@@ -65,7 +77,9 @@ export default {
     
         /**
          * 
-         * Make request
+         * getAllTimes request
+         * 
+         * @example getAllTimes { id }
          * 
          * @returns {Array} Times
         */
@@ -75,7 +89,9 @@ export default {
         
         /**
          * 
-         * Make request
+         * getTime request
+         * 
+         * @example getTime(id: 2) { id }
          * 
          * @returns {Object} Finds an time object by id. Sort type = "find"
         */
