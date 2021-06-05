@@ -7,7 +7,6 @@ require("dotenv").config();
  * dotenv: https://www.npmjs.com/package/dotenv
  * 
 */
-
 export default {
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,

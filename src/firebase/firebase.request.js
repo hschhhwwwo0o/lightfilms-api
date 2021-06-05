@@ -13,7 +13,6 @@ import database from ".";
  * 
  * @returns Data from firebase
 */
-
 const requestFirebase = (child, sort, parametr) => {
     let data;
     
@@ -25,13 +24,11 @@ const requestFirebase = (child, sort, parametr) => {
      * 
      * @returns {void} Write data in variable
     */
-
     const getData = async (child) => {
         await database.ref().child(child).get()
         .then((s) => { if ( s.exists() ) { data = s.val() }})
         .catch((error) => { console.error(error) });
     };
-
 
     if(sort === "all" || sort === undefined) {
 
