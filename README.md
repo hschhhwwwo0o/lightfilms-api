@@ -59,6 +59,8 @@ type Film {
 - **https://www.apollographql.com/docs/react/data/queries/**
 - **https://www.apollographql.com/docs/react/data/fragments/**
 
+<br />
+
 Made with love ❤️
 
 My Telegram: **@ssandry0** \
