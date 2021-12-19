@@ -14,14 +14,14 @@
 
 ```graphql
 type Film {
-    id: ID!
-    title: String!
-    coverIMG: String!
-    genres: [String]
-    countries: [String]
-    year: String!
-    producer: Card!
-    about: About!
+  id: ID!
+  title: String!
+  coverIMG: String!
+  genres: [String]
+  countries: [String]
+  year: String!
+  producer: Card!
+  about: About!
 }
 ```
 
@@ -67,9 +67,9 @@ I'm on Telegram: **@ssandry0** \
 I'm on Behance: **https://www.behance.net/aftertaste** \
 I'm on Dribbble: **https://dribbble.com/ssandry0**
 
-[LIGHTFILMS]: <https://github.com/ssandry/lightfilms>
-[here]: <https://lightfilms-api.herokuapp.com/graphql>
-[Firebase]: <https://firebase.google.com/>
-[Heroku]: <https://dashboard.heroku.com/>
-[NodeJS]: <https://dashboard.heroku.com/>
-[NPM]: <https://www.npmjs.com/>
+[lightfilms]: https://github.com/ssandry/lightfilms
+[here]: https://lightfilms-api.herokuapp.com/graphql
+[firebase]: https://firebase.google.com/
+[heroku]: https://dashboard.heroku.com/
+[nodejs]: https://dashboard.heroku.com/
+[npm]: https://www.npmjs.com/
