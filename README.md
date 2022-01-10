@@ -32,7 +32,6 @@ type Film {
   getAllFilms {
     id
     title
-    about
   }
 }
 ```
