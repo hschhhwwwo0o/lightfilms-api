@@ -21,7 +21,6 @@ type Film {
   countries: [String]
   year: String!
   producer: Card!
-  about: About!
 }
 ```
 
@@ -45,7 +44,6 @@ type Film {
       {
         "id": "0",
         "title": "Male-female",
-        "about": "About Film"
       }
     ]
   }
