@@ -1,6 +1,6 @@
 ![API Presentation](md/__preview.png "API Presentation")
 
-## API for the lightfilms repository
+## API for the lightfilms project
 
 **[LIGHTFILMS]**
 
