@@ -43,7 +43,7 @@ type Film {
     "getAllFilms": [
       {
         "id": "0",
-        "title": "Male-female",
+        "title": "Male-female"
       }
     ]
   }
