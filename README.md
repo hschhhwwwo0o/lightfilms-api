@@ -2,59 +2,19 @@
 
 ## API for the lightfilms project
 
-**[LIGHTFILMS]**
+[LIGHTFILMS]
 
-**Live preview [here]** \
-**Deployed thanks to [Heroku]** \
-**Database: [Firebase]**
+Live preview [here] \
+Deployed thanks to [Heroku] \
+Database: [Firebase]
 
-**Used package manager: [NPM]**
-
-## GraphQL type description
-
-```graphql
-type Film {
-  id: ID!
-  title: String!
-  coverIMG: String!
-  genres: [String]
-  countries: [String]
-  year: String!
-  producer: Card!
-}
-```
-
-## GraphQL query
-
-```graphql
-{
-  getAllFilms {
-    id
-    title
-  }
-}
-```
-
-## Example of a GraphQL response
-
-```json
-{
-  "data": {
-    "getAllFilms": [
-      {
-        "id": "0",
-        "title": "Male-female"
-      }
-    ]
-  }
-}
-```
+Used package manager: [NPM]
 
 ## Useful documentation
 
-- **https://habr.com/ru/post/424199/**
-- **https://www.apollographql.com/docs/react/data/queries/**
-- **https://www.apollographql.com/docs/react/data/fragments/**
+- https://habr.com/ru/post/424199/
+- https://www.apollographql.com/docs/react/data/queries/
+- https://www.apollographql.com/docs/react/data/fragments/
 
 <br />
 
