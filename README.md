@@ -1,5 +1,5 @@
 ![API Presentation](md/__preview.png "API Presentation")
-![API Presentation](md/frontend.png "API Presentation")
+![API Presentation](md/f2.png "API Presentation")
 
 ## API for the lightfilms project
 
