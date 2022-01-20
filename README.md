@@ -13,6 +13,7 @@ Used package manager: [NPM]
 ## Tech Stack
 
 - **[NodeJS]** - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **[ExpressJS]** - Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 - **[Firebase]** - Database
 - **[GraphQL]** - A query language for API
 - **[Apollo]** - Apollo Server is an open-source, spec-compliant GraphQL server
@@ -31,6 +32,7 @@ I'm on Telegram: **@ssandry0** \
 I'm on Behance: **https://www.behance.net/aftertaste** \
 I'm on Dribbble: **https://dribbble.com/ssandry0**
 
+[expressjs]: https://expressjs.com/ru/
 [nodejs]: https://github.com/ssandry/lightfilms
 [graphql]: https://graphql.org/
 [apollo]: https://www.apollographql.com/
