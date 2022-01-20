@@ -1,4 +1,4 @@
-![API Presentation](md/g.png "API Presentation")
+![API Presentation](md/gg.png "API Presentation")
 
 ## GraphQL LIGHTFILMS API written in ExpressJS
 
