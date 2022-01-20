@@ -10,6 +10,13 @@ Database: [Firebase]
 
 Used package manager: [NPM]
 
+## Tech Stack
+
+- **[NodeJS]** - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **[Firebase]** - Database
+- **[GraphQL]** - A query language for API
+- **[Apollo]** - Apollo Server is an open-source, spec-compliant GraphQL server
+
 ## Useful documentation
 
 - https://habr.com/ru/post/424199/
@@ -24,6 +31,10 @@ I'm on Telegram: **@ssandry0** \
 I'm on Behance: **https://www.behance.net/aftertaste** \
 I'm on Dribbble: **https://dribbble.com/ssandry0**
 
+[nodejs]: https://github.com/ssandry/lightfilms
+[graphql]: https://graphql.org/
+[apollo]: https://www.apollographql.com/
+[firebase]: https://firebase.google.com/docs/database?hl=nl
 [lightfilms]: https://github.com/ssandry/lightfilms
 [here]: https://lightfilms-api.herokuapp.com/graphql
 [firebase]: https://firebase.google.com/
