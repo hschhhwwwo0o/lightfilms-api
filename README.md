@@ -1,4 +1,4 @@
-![API Presentation](md/g.jpg "API Presentation")
+![API Presentation](md/g.jpg#gh-light-mode-only)
 
 ## GraphQL LIGHTFILMS API written in ExpressJS
 
