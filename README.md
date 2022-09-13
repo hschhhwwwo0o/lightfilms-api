@@ -24,13 +24,7 @@ Used package manager: [NPM]
 - https://www.apollographql.com/docs/react/data/queries/
 - https://www.apollographql.com/docs/react/data/fragments/
 
-<br />
-
 Made with love ❤️
-
-I'm on Telegram: **@hschhhwwwo0o** \
-I'm on Behance: **https://www.behance.net/hschhhwwwo0o** \
-I'm on Dribbble: **https://dribbble.com/ssandry0**
 
 [expressjs]: https://expressjs.com/ru/
 [nodejs]: https://github.com/ssandry/lightfilms
